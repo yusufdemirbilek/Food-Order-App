@@ -1,10 +1,10 @@
 import React from "react";
-
+import {useState,useEffect} from "react";
 import './CartButton.css';
 
 const CartButton = props =>{
     return (
-    <button className="button">
+    <button onClick={()=>{props.stateChange()}} className="button">
     
     <span>
         Your Cart
